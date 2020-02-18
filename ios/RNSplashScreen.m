@@ -8,6 +8,7 @@
  */
 
 #import "RNSplashScreen.h"
+#import "SplashViewController.h"
 #import <React/RCTBridge.h>
 
 static bool waiting = true;
@@ -21,15 +22,7 @@ static UIView* loadingView = nil;
 RCT_EXPORT_MODULE(SplashScreen)
 
 + (void)show {
-    if (!addedJsLoadErrorObserver) {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(jsLoadError:) name:RCTJavaScriptDidFailToLoadNotification object:nil];
-        addedJsLoadErrorObserver = true;
-    }
-
-    while (waiting) {
-        NSDate* later = [NSDate dateWithTimeIntervalSinceNow:0.1];
-        [[NSRunLoop mainRunLoop] runUntilDate:later];
-    }
+    [SplashViewController show];
 }
 
 + (void)showSplash:(NSString*)splashScreen inRootView:(UIView*)rootView {
@@ -59,15 +52,18 @@ RCT_EXPORT_MODULE(SplashScreen)
 + (void) jsLoadError:(NSNotification*)notification
 {
     // If there was an error loading javascript, hide the splash screen so it can be shown.  Otherwise the splash screen will remain forever, which is a hassle to debug.
-    [RNSplashScreen hide];
+    //[RNSplashScreen hide];
+     [SplashViewController hide];
 }
 
 RCT_EXPORT_METHOD(hide) {
-    [RNSplashScreen hide];
+    //[RNSplashScreen hide];
+    [SplashViewController hide];
 }
 
 RCT_EXPORT_METHOD(show) {
-    [RNSplashScreen show];
+  //  [RNSplashScreen show];
+    [SplashViewController show];
 }
 
 @end
