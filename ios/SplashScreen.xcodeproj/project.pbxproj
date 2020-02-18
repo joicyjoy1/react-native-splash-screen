@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D7682841D8E76D10014119E /* RNSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7682831D8E76D10014119E /* RNSplashScreen.m */; };
+		5374CD5F23FBECA30034E017 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5374CD5D23FBECA30034E017 /* SplashViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,8 @@
 		3D7682761D8E76B80014119E /* libSplashScreen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSplashScreen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D7682821D8E76D10014119E /* RNSplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSplashScreen.h; sourceTree = "<group>"; };
 		3D7682831D8E76D10014119E /* RNSplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSplashScreen.m; sourceTree = "<group>"; };
+		5374CD5D23FBECA30034E017 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		5374CD5E23FBECA30034E017 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,8 @@
 		3D76826D1D8E76B80014119E = {
 			isa = PBXGroup;
 			children = (
+				5374CD5E23FBECA30034E017 /* SplashViewController.h */,
+				5374CD5D23FBECA30034E017 /* SplashViewController.m */,
 				3D7682821D8E76D10014119E /* RNSplashScreen.h */,
 				3D7682831D8E76D10014119E /* RNSplashScreen.m */,
 				3D7682771D8E76B80014119E /* Products */,
@@ -96,6 +101,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 3D76826D1D8E76B80014119E;
@@ -114,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D7682841D8E76D10014119E /* RNSplashScreen.m in Sources */,
+				5374CD5F23FBECA30034E017 /* SplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
